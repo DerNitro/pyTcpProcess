@@ -2,15 +2,19 @@
 # -*- coding: utf-8 -*-
 
 """
-    Filename : tcp_process
+    Filename : pyTcpProcess.py
     Date: 08.04.2020 05:18
-    Project: tcp_process
+    Project: pyTcpProcess
     AUTHOR : Sergey Utkin
+    EMAIL: utkins01@gmail.com
 """
 
 import sys
 import os
 import json
+
+__name__ = 'pyTcpProcess.py'
+__version__ = 0.1
 
 socket_file_list = [
     '/proc/net/tcp',
@@ -217,6 +221,16 @@ def get_name(path):
         return None
     return None
 
+
+if len(sys.argv) == 2 and sys.argv[1] in ('--help', '-h'):
+    print(
+        'Утилита сбора информации по TCP|UDP сессиям\n'
+        '\trun: python pyTcpProcess.py'
+        )
+    sys.exit(0)
+elif len(sys.argv) == 2 and sys.argv[1] in ('--version', '-v'):
+    print('{}: {}'.format(__name__, __version__))
+    sys.exit(0)
 
 socket_list = []
 for socket_file in socket_file_list:
