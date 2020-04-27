@@ -14,7 +14,7 @@ import os
 import json
 
 __name__ = 'pyTcpProcess.py'
-__version__ = 0.1
+__version__ = 0.1-1
 
 socket_file_list = [
     '/proc/net/tcp',
@@ -142,10 +142,10 @@ class SocketConnect:
 
     def get(self):
         out = {
-            'SrcAddr': self.local_ip,
-            'SrcPort': self.local_port,
-            'DstAddr': self.remote_ip,
-            'DstPort': self.remote_port,
+            'LocalAddr': self.local_ip,
+            'LocalPort': self.local_port,
+            'RemoteAddr': self.remote_ip,
+            'RemotePort': self.remote_port,
             'Proccess': self.process.get()
         }
         return out
