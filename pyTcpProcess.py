@@ -50,6 +50,7 @@ class IPv6:
     group_hex = []    # type: list
 
     def __init__(self, ip):
+        self.group_hex = []
         for it in zip(*[iter(ip)] * 4):
             self.group_hex.append(''.join(it))
         for num in range(0, len(self.group_hex)):
