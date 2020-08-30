@@ -146,6 +146,7 @@ class SocketConnect:
             'LocalPort': self.local_port,
             'RemoteAddr': self.remote_ip,
             'RemotePort': self.remote_port,
+            'State': self.state,
             'Proccess': self.process.get()
         }
         return out
