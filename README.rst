@@ -2,20 +2,13 @@ pyTcpProcess
 ============
 
 Утилита сбора информации по TCP|UDP соединениям в формате JSON.
-* LocalSocket
-* RemoteSocket
-* Process:PID
-* State
-
-_История создания: https://dernitro.blogspot.com/2020/04/tcpudp-linux.html
-
 
 * LocalSocket
 * RemoteSocket
 * Process:PID
 * State
 
-_История создания: https://dernitro.blogspot.com/2020/04/tcpudp-linux.html
+История создания: https://dernitro.blogspot.com/2020/04/tcpudp-linux.html
 
 
 Тестировалась на:
