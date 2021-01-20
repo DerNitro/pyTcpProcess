@@ -8,7 +8,7 @@ pyTcpProcess
 * Process:PID
 * State
 
-История создания: https://dernitro.blogspot.com/2020/04/tcpudp-linux.html
+История создания: https://su-blog.ru/posts/pyspoolerrenamer/
 
 
 Тестировалась на:
